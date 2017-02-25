@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css"  href="ligne01.css">
+        <title>Ligne 347</title>
+    </head>
+    <body>
+        <div id="destination">
+		        <p> Ligne 347 </p>
+            <p>Destination: Gare de Vaire</br> Arrêt: <b id="blu"> RER Gare de Chelles</b></p>
+        </div>
+        <div id="corps">
+            <div id ="image">
+                <img src="../img/1GareRERChelles.jpg" alt="arret 1GareRERChelles" />
+            </div>
+            <div id="description">
+                <div id= "liste">
+                    <p><b id="blur">Gare RER Chelles</b></p>
+                    <p>Adolphe Besson</p>
+                    <p>Mairie de chelles</p>
+                    <p>François Mitterand</p>
+					          <p>Chelles 2</p>
+                    <p>Chantereine</p>
+                    <p>Gare de Vaire</p>
+
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div id="message">
+            <marquee behavior="scroll" direction="left" id="scroll">Information : Traffic perturbé dans le centre ville de chelles</marquee>
+        </div>
+        <div id="prochain">
+        <p>  Prochain arrêt : <b id="blur1" >Adolphe Besson</b></p>
+        </div>
+        <audio autoplay>
+          <source src="../son/0-GARE_RER_Chelles/GareDeChelles.wav" type="audio/wav">
+
+          </audio>
+            <audio onloadeddata="var audioPlayer = this; setTimeout(function() { audioPlayer.play(); }, 3000)">>
+          <source src="../son/0-GARE_RER_Chelles/PAAdolpheBesson.wav" type="audio/wav">
+            </audio>
+    </body>
+</html>

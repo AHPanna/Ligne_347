@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Indexing Pages</title>
+
+    <style>
+    .button {
+      display: inline-block;
+      border-radius: 4px;
+      background-color: #673AB7;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 28px;
+      padding: 20px;
+
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+    }
+
+    .button span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+
+    .button span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+
+    .button:hover span {
+      padding-right: 25px;
+    }
+
+    .button:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+    .button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: #E91E63;
+    color: white;
+}
+
+body{
+    background-color: #263238;
+  }
+
+.box{
+    margin: auto;
+    border: 2px solid cyan;
+    padding: 4px 40px 0px 40px;
+    /*min-height: 70px;*/
+    margin-top: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    text-align: center;
+    font-size: 24pt;
+    box-shadow: 0 15px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.info{
+  margin-top: 30%;
+  margin-left: 80%;
+  margin-right: 10%;
+  color: white;
+   text-shadow: 0px 1px 3px green;
+}
+#twitter {
+  color: cyan;
+   text-shadow: 0px 1px 3px cyan;
+}
+    </style>
+
+
+  </head>
+  <body>
+
+<div class="box">
+  <button class="button" style="vertical-align:middle" onclick="window.location.href='1indexGareChelles.htm' " ><span>Page 1 </span></button>
+  <button class="button" style="vertical-align:middle" onclick="window.location.href='2indexAdolpheBesson.htm' "><span>Page 2 </span></button>
+  <button class="button" style="vertical-align:middle" onclick="window.location.href='3indexMairieDeChelles.htm' "><span>Page 3 </span></button>
+  <button class="button" style="vertical-align:middle" onclick="window.location.href='4indexFrancoisMitterand.htm' "><span>Page 4 </span></button>
+  <button class="button" style="vertical-align:middle" onclick="window.location.href='5indexChelles2.htm' "><span>Page 5 </span></button>
+  <button class="button" style="vertical-align:middle" onclick="window.location.href='6indexChantereine.htm' "><span>Page 6 </span></button>
+  <button class="button" style="vertical-align:middle" onclick="window.location.href='7indexGaredeVaire.htm' "><span>Page 7 </span></button>
+
+</div>
+
+
+  </body>
+  <div class="info">Made by <a  id="twitter" href="https://twitter.com/AH_Panna">Panna</a>
+
+  </div>
+</html>
